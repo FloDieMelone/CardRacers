@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.main-menu {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #252b36;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+            radial-gradient(circle at 20% 20%, #586b47, transparent 35%),
+            radial-gradient(circle at 80% 80%, #754c36, transparent 35%),
+            linear-gradient(135deg, #252b36, #343d49);
+}
+
+.menu-content {
+    text-align: center;
+    padding: 30px;
+}
+
+.game-title {
+    font-family: 'Black Ops One', cursive;
+    font-size: clamp(65px, 10vw, 125px);
+    line-height: 0.85;
+    color: #ffe45c;
+    text-shadow:
+            5px 5px 0 #a74420,
+            9px 9px 0 #171717;
+    transform: rotate(-4deg);
+    margin-bottom: 20px;
+}
+
+.game-title span {
+    display: block;
+    color: #ff7545;
+    font-size: 0.7em;
+    margin-top: 15px;
+}
+
+.subtitle {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px #000;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+
+.menu-button {
+    width: 280px;
+    padding: 15px;
+    border: 4px solid #171717;
+    border-radius: 12px;
+    background: #f2bd45;
+    color: #252525;
+
+    font-size: 22px;
+    font-weight: 900;
+
+    cursor: pointer;
+    box-shadow: 5px 5px 0 #111;
+
+    transition: 0.15s ease;
+}
+
+.menu-button:hover {
+    transform: scale(1.08) rotate(-2deg);
+    background: #fff176;
+    box-shadow: 8px 8px 0 #111;
+}
+
+.menu-button:active {
+    transform: translate(4px, 4px);
+    box-shadow: 1px 1px 0 #111;
+}
+
+.menu-button.play {
+    background: #ed6841;
+    color: white;
+}
+
+.menu-button.exit {
+    background: #555;
+    color: white;
+}
+
+.version {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    color: #aaa;
+    font-size: 12px;
+}
