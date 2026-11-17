@@ -1,25 +1,20 @@
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Menu from "./components/Menu";
+//import Game from "./components/Game";
+//import Garage from "./components/Garage";
+//import Statistics from "./components/Statistics";
+//import Settings from "./components/Settings";
 
 function App() {
-
-
   return (
-    <>
-      <div className="fw-bold fs-2">CardRacer</div>
-
-        <div>
-          <button onClick={() => {
-            console.log("Click");
-          }}>zum CounterButton</button>
-        </div>
-        <div>
-        <button>Garage</button>
-        </div>
-        <div>
-        <button>Collection</button>
-        </div>
-    </>
-  )
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Menu />} />
+        </Routes>
+      </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
