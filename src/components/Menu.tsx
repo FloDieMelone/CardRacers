@@ -50,7 +50,7 @@ export default function Menu() {
 
                         <button
                             className="menu-button"
-                            onClick={() => window.close()}
+                            onClick={() => navigate("/daily")}
                         >
                             ⚡ DAILY CHALLENGE
                         </button>
