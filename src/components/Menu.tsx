@@ -49,10 +49,10 @@ export default function Menu() {
                         </button>
 
                         <button
-                            className="menu-button exit"
+                            className="menu-button"
                             onClick={() => window.close()}
                         >
-                            ✖ EXIT
+                            ⚡ DAILY CHALLENGE
                         </button>
                     </div>
 

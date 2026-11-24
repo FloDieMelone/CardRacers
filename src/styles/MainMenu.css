@@ -98,11 +98,6 @@
     color: white;
 }
 
-.menu-button.exit {
-    background: #555;
-    color: white;
-}
-
 .version {
     position: fixed;
     bottom: 15px;
